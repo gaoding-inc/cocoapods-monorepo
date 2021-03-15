@@ -2,7 +2,19 @@
 
 A tool for organizing code like monorepo.
 
-`cocoapods-monorepo` allowed you to specify a directory, so we can extend CocoaPods to support `monorepo` feature. Thanks to this plugin we can turn all the pods that under the specified directory into `Development Pods`. 
+`cocoapods-monorepo` allowed you to specify a directory, so we can extend CocoaPods to support `monorepo` feature. Thanks to this plugin we can turn all the pods that under a specified directory into `Development Pods`. You will no longer need to specify all local paths in the `Podfile`, for example:
+
+```ruby
+pod 'ModuleA', :path => 'path/to/ModuleA'
+pod 'ModuleB', :path => 'path/to/ModuleB'
+pod 'ModuleC', :path => 'path/to/ModuleC'
+```
+
+And it also support specify a local dependency in `podsepc`, that's say you need to declare a dependency of `ModuleB `  in `ModuleA.podspec`: 
+
+```ruby
+s.dependency 'ModuleB' # inside ModuleA.podspec
+```
 
 ## Installation
 
@@ -15,6 +27,8 @@ Add a reference to it in your `Podfile`, and specified the necessary option `:pa
 ```ruby
 plugin 'cocoapods-monorepo', :path => 'path/to/repos-directory'
 ```
+
+And you also need to orgnize all you local modules under the same directory same as `:path` option.
 
 Enjoy it!
 

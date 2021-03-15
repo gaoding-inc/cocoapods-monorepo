@@ -1,6 +1,6 @@
 # cocoapods-monorepo
 
-A tool for organizing code in a way of monorepo.
+A tool for organizing code in a way called monorepo.
 
 `cocoapods-monorepo` allowed you to specify a directory, so we can extend CocoaPods to support `monorepo` feature. Thanks to this plugin we can turn all the pods that under a specified directory into `Development Pods`. You will no longer need to specify all local paths in the `Podfile`, eg:
 

@@ -17,28 +17,29 @@ module Pod
     # @todo Create a PR to add your plugin to CocoaPods/cocoapods.org
     #       in the `plugins.json` file, once your plugin is released.
     #
-    class Monorepo < Command
-      self.summary = 'Short description of cocoapods-githooks.'
-
-      self.description = <<-DESC
-        Longer description of cocoapods-githooks.
-      DESC
-
-      self.arguments = 'NAME'
-
-      def initialize(argv)
-        @name = argv.shift_argument
-        super
-      end
-
-      def validate!
-        super
-        help! 'A Pod name is required.' unless @name
-      end
-
-      def run
-        UI.puts "Add your implementation for the cocoapods-githooks plugin in #{__FILE__}"
-      end
-    end
+#    class Monorepo < Command
+#      self.summary = 'Short description of cocoapods-githooks.'
+#
+#      self.description = <<-DESC
+#        Longer description of cocoapods-githooks.
+#      DESC
+#
+#      self.arguments = 'NAME'
+#
+#      def initialize(argv)
+#        @name = argv.shift_argument
+#        super
+#      end
+#
+#      def validate!
+#        super
+#        help! 'A Pod name is required.' unless @name
+#      end
+#
+#      def run
+#        UI.puts "Add your implementation for the cocoapods-githooks plugin in #{__FILE__}"
+#      end
+#    end
+    
   end
 end

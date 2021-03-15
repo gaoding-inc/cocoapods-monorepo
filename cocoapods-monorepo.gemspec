@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsMonorepo::VERSION
   spec.authors       = ['menttofly']
   spec.email         = ['1028265614@qq.com']
-  spec.description   = %q{本插件用于解决mono-repo组件化中本地pod连环依赖的问题.}
-  spec.summary       = %q{本插件用于解决mono-repo组件化中本地pod连环依赖的问题.}
+  spec.description   = %q{A assistant for code organization by using monorepo.}
+  spec.summary       = %q{`cocoapods monorepo` will make the dependencies that under specified directory into development pods.}
   spec.homepage      = 'https://github.com/menttofly/cocoapods-monorepo.git'
   spec.license       = 'MIT'
 

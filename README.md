@@ -46,5 +46,5 @@ You need to orgnize all these local modules under a directory same as `:path` op
 │   ├── README.md
 ```
 
-Enjoy it!
+*Enjoy it!*
 

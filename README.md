@@ -1,4 +1,5 @@
 # cocoapods-monorepo
+[![Gem Version](https://badge.fury.io/rb/cocoapods-monorepo.svg)](https://badge.fury.io/rb/cocoapods-monorepo)
 
 A tool for organizing code in `monorepo` way.
 

@@ -31,7 +31,7 @@ plugin 'cocoapods-monorepo', :path => 'path/to/repos-directory'
 
 ## Requirements
 
-You need to orgnize all these local modules under the same directory as `:path` option.
+You need to orgnize all these local modules under the same directory with `:path` option.
 
 ```bash
 .

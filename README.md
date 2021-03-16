@@ -10,7 +10,7 @@ pod 'ModuleB', :path => 'path/to/ModuleB'
 pod 'ModuleC', :path => 'path/to/ModuleC'
 ```
 
-And it also support specify a local dependency in `podsepc`, that's say you need to declare a dependency of `ModuleB `  in `ModuleA.podspec`: 
+Besides, you can also specify a local dependency in `podsepc`, that's say you need to declare a dependency of `ModuleB `  in `ModuleA.podspec`: 
 
 ```ruby
 s.dependency 'ModuleB' # inside ModuleA.podspec
@@ -28,7 +28,22 @@ Add a reference to it in your `Podfile`, and specified the necessary option `:pa
 plugin 'cocoapods-monorepo', :path => 'path/to/repos-directory'
 ```
 
-And you also need to orgnize all you local modules under the same directory same as `:path` option.
+## Requirements
+
+You need to orgnize all these local modules under a directory same as `:path` option.
+
+```bash
+.
+├── ModuleA
+│   ├── ModuleA.podspec
+│   └── README.md
+├── ModuleB
+│   ├── ModuleB.podspec
+│   ├── README.md
+├── ModuleC
+│   ├── ModuleC.podspec
+│   ├── README.md
+```
 
 Enjoy it!
 

@@ -15,10 +15,10 @@ module CocoapodsMonorepo
         # Create instance of `PodspecLocalCache` from some directory.
         def self.from_local_path(directory_path)
             unless File.directory?(directory_path)
-              raise Pod::Informative, "[cocoapods-monorepo]: `#{directory_path}` is not a directory"
+              raise Pod::Informative, "[cocoapods-monorepo]: `#{directory_path}` is not a directory!"
             end
             podspecs = {}
-            podspec_files = Dir.glob(File.join(directory_path, "*", "*.podspec"))
+            podspec_files = Dir.glob(File.join(directory_path, "**", "*.podspec"))
             podspec_files.each do |podspec_file|
                 specification = Pod::Specification.from_file(podspec_file)
                 validate_podspec(specification)

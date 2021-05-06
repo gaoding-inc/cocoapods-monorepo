@@ -18,7 +18,7 @@ module CocoapodsMonorepo
               raise Pod::Informative, "[cocoapods-monorepo]: `#{directory_path}` is not a directory!"
             end
             podspecs = {}
-            podspec_files = Dir.glob(File.join(directory_path, "**", "*.podspec"))
+            podspec_files = Dir.glob(File.join(directory_path, "*", "*.podspec"))
             podspec_files.each do |podspec_file|
                 specification = Pod::Specification.from_file(podspec_file)
                 validate_podspec(specification)

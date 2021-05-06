@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['1028265614@qq.com']
   spec.description   = %q{A assistant for code organization by using monorepo.}
   spec.summary       = %q{`cocoapods monorepo` will make the dependencies that under specified directory into development pods.}
-  spec.homepage      = 'https://github.com/menttofly/cocoapods-monorepo.git'
+  spec.homepage      = 'https://github.com/'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
